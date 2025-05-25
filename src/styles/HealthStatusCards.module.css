@@ -1,0 +1,41 @@
+.cardsContainer {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.statusHealthy {
+  color: #2ecc71;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 4px 8px;
+  background: rgba(46, 204, 113, 0.1);
+  border-radius: 6px;
+}
+
+.statusWarning {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 4px 8px;
+  background: rgba(231, 76, 60, 0.1);
+  border-radius: 6px;
+}
+
+.card p {
+  font-size: 0.875rem;
+  margin-top: 8px;
+}

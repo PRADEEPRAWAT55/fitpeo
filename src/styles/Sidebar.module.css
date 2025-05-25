@@ -1,0 +1,73 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #f6faff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.04);
+  padding-top: 70px;
+}
+
+.sectionTitle {
+  color: #adb5bd;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 24px 0 12px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #6c757d;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background-color: #eef1f6;
+  color: #1c1e21;
+}
+
+.navItem.active {
+  background-color: #e2e6fa;
+  color: #3c4bd9;
+  font-weight: 600;
+}
+
+.bottomSetting {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    padding: 16px;
+  }
+
+  .navItem {
+    font-size: 0.8rem;
+    justify-content: center;
+  }
+
+  .sectionTitle {
+    display: none; /* Hide section titles on smaller screens */
+  }
+}

@@ -1,0 +1,52 @@
+.mainContent {
+  flex: 1;
+  padding: 0 32px 32px 32px;
+  margin-left: 240px;
+}
+
+.gridContainer {
+  display: grid;
+  gap: 0 24px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "overview calendar"
+    "schedule activity";
+}
+
+.overviewSection {
+  grid-area: overview;
+  display: grid;
+  gap: 24px;
+}
+
+.calendarSection {
+  margin: 20px;
+  grid-area: calendar;
+  background: #f6faff;
+}
+
+.scheduleSection {
+  grid-area: schedule;
+}
+
+.activitySection {
+  background: #f6faff;
+
+  grid-area: activity;
+}
+
+@media (max-width: 1200px) {
+  .mainContent {
+    margin-left: 0;
+    padding: 24px;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "overview"
+      "calendar"
+      "schedule"
+      "activity";
+  }
+}

@@ -1,0 +1,122 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 5fr 5fr;
+  align-items: center;
+  background: #ffffff;
+  z-index: 1000;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: #f6faff;
+}
+
+.logoFirst {
+  padding: 0 0 0 32px;
+  font-size: 1.5rem;
+  color: #28d3e8;
+  font-weight: bolder;
+}
+
+.logoSecond {
+  padding: 0 32px 0 0;
+  font-size: 1.4rem;
+  color: #251d53;
+  font-weight: bold;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 10px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: 1px solid #e9ecef;
+}
+
+.searchBar input {
+  border: none;
+  background: transparent;
+  margin-left: 12px;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.searchBar span .icon {
+  font-size: 1.2rem;
+  color: #424ef5;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end; /* Push content to the right */
+  align-items: center;
+  padding: 0 16px;
+  background: #f6faff;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  background-color: #424ef5;
+  padding: 13px;
+  border-radius: 6px;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: aqua;
+  padding: 7px;
+  border-radius: 6px;
+}
+
+.profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile span {
+  font-weight: 500;
+  color: #2d3436;
+}
+
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr 3fr 2fr;
+    gap: 10px;
+  }
+
+  .searchBar {
+    display: none; /* Hide search bar on smaller screens */
+  }
+
+  .actionsContainer {
+    gap: 10px;
+  }
+}

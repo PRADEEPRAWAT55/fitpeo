@@ -1,0 +1,151 @@
+.anatomyContainer {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 100px;
+  margin-bottom: 32px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.leftSection {
+  background-color: white !important;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.anatomySectionHeader {
+  width: 100%;
+  color: #3038ac;
+}
+
+.bodyWrapper {
+  position: relative;
+  height: 360px;
+  width: 100%;
+}
+
+.bodyImage {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  background-color: #f6faff;
+}
+
+.healthTag {
+  position: absolute;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.heart {
+  top: 30%;
+  left: 70%;
+  background: #3038ac;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.leg {
+  top: 80%;
+  left: 7%;
+  background: #02e2f1;
+  color: #3038ac;
+  padding: 10px 20px;
+}
+
+.activityBar {
+  margin-top: auto;
+  padding-top: 16px;
+  font-size: 14px;
+  color: #555;
+  background-color: #f6faff;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cardsHeader,
+.cardsFooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #6c757d;
+}
+
+.cardsHeader a,
+.cardsFooter a {
+  margin: 10px;
+  gap: 7px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 800;
+  color: #3038ac;
+  text-decoration: none;
+}
+
+.healthCard {
+  background: #f6faff;
+  border-radius: 12px;
+  padding: 16px;
+  gap: 25px;
+  align-items: self-start;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cardIcon {
+  display: flex;
+  gap: 25px;
+  font-size: 24px;
+  align-items: center;
+  color: #555;
+}
+
+.healthCard h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #3038ac;
+  font-weight: bold;
+}
+
+.healthCard p {
+  font-size: 13px;
+  color: #888;
+  margin: 4px 0;
+  padding: 10px 0;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progressRed {
+  height: 100%;
+  background-color: #c54d4f;
+  border-radius: 10px 0 0 10px;
+}
+
+.progressGreen {
+  height: 100%;
+  background-color: #65c9c0;
+  border-radius: 10px 0 0 10px;
+}
+
+.progressOrange {
+  height: 100%;
+  background-color: #d48937;
+  border-radius: 10px 0 0 10px;
+}

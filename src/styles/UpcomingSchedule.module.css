@@ -1,0 +1,67 @@
+.scheduleContainer {
+  background: #f6faff;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 28px;
+  color: #3038ac;
+}
+
+.dayGroup {
+  margin-bottom: 32px;
+}
+
+.dayHeading {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.appointmentRow {
+  display: flex !important;
+  gap: 16px;
+  flex: content !important;
+
+}
+
+.appointmentCard {
+  background-color: #dde2f9;
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  min-width: 200px;
+  max-width: 280px;
+  flex: 1 1 auto;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-top: -15px;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 23px;
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.cardTime {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
